@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAQ</title>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl sm:text-3xl font-extrabold">Frequently Asked Questions</h1>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-8 sm:py-12 space-y-5">
+        
+        <!-- FAQ Section -->
+        <section aria-labelledby="faq-heading">
+            <h2 id="faq-heading" class="sr-only">FAQ Section</h2>
+
+            <!-- FAQ 1 -->
+            <div class="collapse collapse-arrow bg-base-200 rounded-lg">
+                <input type="radio" name="faq-accordion" id="faq1" class="hidden" checked>
+                <label for="faq1" class="collapse-title text-xl sm:text-2xl font-bold">What is Document Object Model (DOM)?</label>
+                <div class="collapse-content">
+                    <p class="font-medium text-sm sm:text-base text-gray-500">
+                        The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="collapse collapse-arrow bg-base-200 rounded-lg mt-4">
+                <input type="radio" name="faq-accordion" id="faq2" class="hidden">
+                <label for="faq2" class="collapse-title text-xl sm:text-2xl font-bold">How do you select an element from the DOM?</label>
+                <div class="collapse-content">
+                    <p class="font-medium text-sm sm:text-base text-gray-500">
+                        The <code>getElementById()</code> method of the Document interface returns an Element object representing the element whose id property matches the specified string.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="collapse collapse-arrow bg-base-200 rounded-lg mt-4">
+                <input type="radio" name="faq-accordion" id="faq3" class="hidden">
+                <label for="faq3" class="collapse-title text-xl sm:text-2xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</label>
+                <div class="collapse-content">
+                    <p class="font-medium text-sm sm:text-base text-gray-500">
+                        Event delegation uses a single parent listener to handle events for its child elements efficiently. This reduces memory usage and improves performance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="collapse collapse-arrow bg-base-200 rounded-lg mt-4">
+                <input type="radio" name="faq-accordion" id="faq4" class="hidden">
+                <label for="faq4" class="collapse-title text-xl sm:text-2xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</label>
+                <div class="collapse-content">
+                    <p class="font-medium text-sm sm:text-base text-gray-500">
+                        You can use the <code>setAttribute()</code> method to modify an element's attributes and <code>element.style</code> for manipulating inline styles programmatically.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2024 All Rights Reserved. | FAQ Page
+        </div>
+    </footer>
+
+</body>
+</html>
